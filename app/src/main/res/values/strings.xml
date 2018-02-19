@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Ejemplo</string>
+    <string name="titulo">Form, Point #1</string>
+    <string name="nombre">Login:</string>
+    <string name="correo">Password:</string>
+    <string name="guardar">Save</string>
+    <string name="correo1">password</string>
+    <string name="nombre1">user name</string>
+    <string name="masculino">Male</string>
+    <string name="femenino">Female</string>
+    <string name="pasatiempos">PasaTiempos</string>
+    <string name="confirm">Confirm Password:</string>
+    <string name="contra2">password</string>
+
+</resources>
