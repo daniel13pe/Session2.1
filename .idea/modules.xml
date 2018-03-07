@@ -4,6 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Session2.iml" filepath="$PROJECT_DIR$/Session2.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exlayout/exlayout.iml" filepath="$PROJECT_DIR$/exlayout/exlayout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/forms/forms.iml" filepath="$PROJECT_DIR$/forms/forms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/resistencias/resistencias.iml" filepath="$PROJECT_DIR$/resistencias/resistencias.iml" />
     </modules>
   </component>
 </project>

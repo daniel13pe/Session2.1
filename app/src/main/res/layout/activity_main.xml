@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,14 +8,25 @@
     android:orientation="vertical"
     tools:context="com.daniel13pe.session2.MainActivity">
 
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    tools:context="com.daniel13pe.session2.MainActivity">
+
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
         android:text="@string/titulo"
-        android:textSize="34sp"
         android:textColor="@color/black"
-        android:textStyle="bold"
-        android:layout_gravity="center_horizontal"/>
+        android:textSize="30sp"
+        android:textStyle="bold"/>
 
     <!--*El linearLayout, sirve para acomodar la distribucion de los elementos Encerrandolos
     en <LinearLayout...()... <LinearLayout>
@@ -23,20 +35,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="23sp"
+         android:gravity="center_vertical"
         android:textColor="@color/black"
         android:text="@string/nombre"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:imeOptions="actionDone"
+        android:inputType="textEmailAddress"
+        android:singleLine="true"
         android:hint="@string/nombre1"
         android:id="@+id/eNombre"/>
-
-
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:gravity="center_vertical"
         android:textSize="23sp"
         android:textColor="@color/black"
         android:text="@string/correo"/>
@@ -44,8 +60,10 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPassword"
+        android:inputType="textWebPassword"
+        android:imeOptions="actionDone"
         android:hint="@string/correo1"
+        android:singleLine="true"
         android:id="@+id/eCorreo"/>
 
     <!--Tipo de comentario-->
@@ -53,6 +71,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:gravity="center_vertical"
         android:textSize="23sp"
         android:textColor="@color/black"
         android:text="@string/confirm"/>
@@ -60,14 +79,100 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPassword"
+        android:gravity="center_vertical"
+        android:imeOptions="actionDone"
+        android:inputType="textWebPassword"
+        android:singleLine="true"
         android:hint="@string/contra2"
         android:id="@+id/contra"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textSize="23sp"
+        android:textColor="@color/black"
+        android:text="@string/correo2"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:imeOptions="actionDone"
+        android:gravity="center_vertical"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="5dp"
+        android:singleLine="true"
+        android:hint="@string/email"
+        android:id="@+id/email"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textSize="23sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        android:text="@string/city"/>
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:paddingLeft="4dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginRight="5dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textSize="23sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        android:text="@string/cumple"/>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/green"
+        android:layout_gravity="center"
+        android:onClick="setDate"
+        android:text="@string/date_button_set" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignRight="@+id/button1"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="5dp"
+        android:text="@string/date_selected"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textSize="23sp"
+        android:textColor="@color/black"
+        android:text="@string/genero"/>
 
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:id="@+id/radios">
         <RadioButton android:id="@+id/rMasculino"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -83,45 +188,85 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:gravity="center_vertical"
         android:textSize="23sp"
         android:textColor="@color/black"
         android:text="@string/pasatiempos"/>
 
   <LinearLayout
       android:layout_width="wrap_content"
-      android:layout_height="wrap_content">
-
-
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:layout_marginTop="10dp"
+      android:layout_gravity="center_horizontal">
           <CheckBox
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
-              android:text="cine"
+              android:text="Movies"
               android:id="@+id/cCine"
               android:onClick="onCheckBoxClicked"/>
-
           <CheckBox
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
-              android:text="nadar"
+              android:text="Swimming"
               android:id="@+id/cNadar"
               android:onClick="onCheckBoxClicked"/>
-
           <CheckBox
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
               android:text="Gym"
               android:id="@+id/cGym"
               android:onClick="onCheckBoxClicked"/>
+          <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Soccer"
+                android:id="@+id/cSoc"
+                android:onClick="onCheckBoxClicked"/>
 
   </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignRight="@+id/bGuardar"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/texto5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:text="@string/lugarN"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lugares"></ListView>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
         android:textSize="25sp"
         android:textAllCaps="false"
         android:text="@string/guardar"
         android:onClick="guardar"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
         android:layout_gravity="center_horizontal"
-        android:id="@+id/bGuardar"/>
-</LinearLayout>
+        android:id="@+id/bGuardar"
+        android:background="@color/green"
+        android:textColor="@color/white"
+        />
+ </LinearLayout>
+
+</ScrollView>

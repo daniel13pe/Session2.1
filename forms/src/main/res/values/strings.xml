@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">forms</string>
+    <string name="titulo">Punto #2, Figuras!</string>
+    <string name="Triangulos">Triangulo</string>
+    <string name="Cuadrado">Cuadrado</string>
+    <string name="Circulo">Circulo</string>
+    <string name="Cubo">Cubo</string>
+    <string name="l1"> Lado 1 (cm)</string>
+    <string name="l2"> Lado 2 (cm)</string>
+    <string name="rad"> Radio (cm)</string>
+    <string name="l3"> Lado 3 (cm)</string>
+</resources>

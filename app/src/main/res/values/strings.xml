@@ -8,8 +8,48 @@
     <string name="nombre1">user name</string>
     <string name="masculino">Male</string>
     <string name="femenino">Female</string>
-    <string name="pasatiempos">PasaTiempos</string>
+    <string name="pasatiempos">Hobbies:</string>
     <string name="confirm">Confirm Password:</string>
     <string name="contra2">password</string>
+    <string name="correo2">E-mail:</string>
+    <string name="email">e-mail</string>
+    <string name="city">BirthPlace:</string>
+    <string name="genero">Gender:</string>
+    <string name="date_button_set">Set Date</string>
+    <string name="date_selected"></string>
+    <string name="cumple">BirthDate:</string>
+    <string name="lugarN">*Lugar de Nacimiento:</string>
 
+    <string-array name="country_arrays">
+        <item>Bogota DC</item>
+        <item>Cali</item>
+        <item>Medellín</item>
+        <item>Bucarmanga</item>
+        <item>Pasto</item>
+        <item>Huila</item>
+        <item>Barranquilla</item>
+        <item>Cucuta</item>
+    </string-array>
+
+    <string-array name="cali">
+        <item>Cali</item>
+    </string-array>
+    <string-array name="medellin">
+        <item>Medellín</item>
+    </string-array>
+    <string-array name="Bucaros">
+        <item>Bucaramanga</item>
+    </string-array>
+    <string-array name="pasto">
+        <item>Pasto</item>
+    </string-array>
+    <string-array name="huila">
+        <item>Huila</item>
+    </string-array>
+    <string-array name="barranca">
+        <item>Barranquilla</item>
+    </string-array>
+    <string-array name="cucuta">
+        <item>Cucuta</item>
+    </string-array>
 </resources>
